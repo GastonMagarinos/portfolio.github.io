@@ -1,0 +1,239 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family:"Inter",sans-serif;   
+}
+a{
+    color:rgb(153, 153, 153);;
+    text-decoration:none;
+    font-weight: 600;
+}
+ul{
+    list-style:none;
+}
+h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: rgb(153, 153, 153);
+    font-size: 11px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    width:100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    z-index: 100;
+    gap:500px;
+    backdrop-filter: blur(8px) saturate(150%)
+}
+.header-logo{
+    display:flex;
+    align-items:center;
+    gap:10px
+}
+.header-logo h1 {
+    font-size: 20px;
+    display: inline;
+    margin: 0;
+}
+
+.header-nav-ul{
+    display: flex;
+    gap:20px;
+}
+
+.intro-code{
+    font-family: "Press Start 2P", monospace;
+    color:grey;
+     height:80vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px
+}
+.contacto-1{
+    padding-right: 40px;
+}
+.main-btn{
+    display: flex;
+    height: 10vh;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:51px
+}
+.main-sobre-mi{
+    padding:100px;
+    height:67vh;
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+}
+.main-sobre_mi-div-img{
+    height:300px;
+    width:300px;
+    border-radius:10px 10px 10px 10px;
+}
+.contenedor-sobre-mi-img{
+    display:flex;
+    height:300px;
+    width:300px;
+}
+.main-proyectos{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    align-content:flex-start;
+}
+.contenedor-proyectos{
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 500px;
+    
+}
+.proyecto-p {
+    color: #8b949e;
+    max-width: 400px;
+    line-height: 1.6;
+}
+.proyecto-btn {
+    background: #238636;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.tecnologias{
+    height:60vh;
+    padding:60px 2%;
+    
+}
+.tecnologias-article,.tecnologias h3{
+    padding:0% 2%;
+
+}
+.tecnologias-article span{
+    color: #141414;
+    padding:5px 15px;
+    border:1px solid #ddd;
+    border-radius:100px
+}
+.tecnologias-span{
+    transition: background-color 0.6s ease, border-color 0.6s ease;
+}
+.leyenda{
+    height:30vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding:0 4%
+}
+.footer,.footer-seccion{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 2%;
+   padding-bottom: 10px;
+}
+.footer-seccion{
+    gap:40px;
+}
+.footer-contacto{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+.footer-contacto p {
+    display: inline;
+    margin: 0;
+}
+.footer-contacto a{
+    color:black
+}
+
+/*movimientos JS*/
+
+.aparece {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.aparecelento {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.1s ease, transform 0.6s ease;
+}
+.aparece.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.aparecelento.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*transiciones*/
+
+.header-nav-ul li a:hover {
+    color: black;
+}
+
+.header-nav-ul:hover li a:not(:hover) {
+    color: rgb(192, 191, 191);
+}
+
+.header-nav-ul li a {
+    position: relative;
+    text-decoration: none;
+}
+
+.header-nav-ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+}
+
+.header-nav-ul li a:hover::after {
+    width: 100%;
+    transition: width 0.3s ease;
+}
+.proyecto-btn:hover {
+    background: #2ea043;
+}
+.tecnologias-span:hover{
+    
+    background-color: rgb(245 245 245);
+    border-color: #737373;
+
+}
