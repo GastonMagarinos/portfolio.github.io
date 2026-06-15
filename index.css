@@ -8,7 +8,7 @@ body{
     font-family:"Inter",sans-serif;   
 }
 a{
-    color:rgb(153, 153, 153);;
+    color:rgb(153, 153, 153);
     text-decoration:none;
     font-weight: 600;
 }
@@ -34,6 +34,7 @@ h3{
     align-items:center;
     z-index: 100;
     gap:500px;
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(8px) saturate(150%)
 }
 .header-logo{
@@ -50,6 +51,9 @@ h3{
 .header-nav-ul{
     display: flex;
     gap:20px;
+}
+.header-nav-ul li a{
+    color:black;
 }
 
 .intro-code{
@@ -201,12 +205,10 @@ h3{
 
 /*transiciones*/
 
-.header-nav-ul li a:hover {
-    color: black;
-}
 
-.header-nav-ul:hover li a:not(:hover) {
-    color: rgb(192, 191, 191);
+
+.header-nav-ul:has(a:hover) li a:not(:hover) {
+    color: rgb(153, 153, 153);
 }
 
 .header-nav-ul li a {
