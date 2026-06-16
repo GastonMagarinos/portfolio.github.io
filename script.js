@@ -10,4 +10,4 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.aparece').forEach(el => observer.observe(el));
 
-
+e
