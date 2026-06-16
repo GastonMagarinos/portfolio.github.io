@@ -6,17 +6,8 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.add('visible');
         }
     });
-}, { threshold: 0.7 });
+}, { threshold: 0 });
 
 document.querySelectorAll('.aparece').forEach(el => observer.observe(el));
 
-const observer1 = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 1 });
-
-document.querySelectorAll('.aparecelento').forEach(el => observer.observe(el));
 
