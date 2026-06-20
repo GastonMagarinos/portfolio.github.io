@@ -1,5 +1,4 @@
-const nav = document.querySelector('nav');
-document.body.style.paddingTop = nav.offsetHeight + 'px';
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
