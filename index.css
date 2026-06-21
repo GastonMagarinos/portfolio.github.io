@@ -63,7 +63,7 @@ h3{
     font-family: "Press Start 2P", monospace;
     font-size: 50px;
     color:grey;
-    height: 85vh;
+    height: 100vh;
 
     width:100%;
     display:flex;
@@ -71,20 +71,7 @@ h3{
     justify-content: center;
    
 }
-.contenedor-main-btn,.main-btn{
-    height: 15vh;
- display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    padding:0 2%;
-}
-.contenedor-main-btn .main-none p{
-    visibility: hidden;
-}
-.main-btn{
-    gap: 40px;
-     
-}
+
 .main-sobre-mi{
     padding:100px;
     height:90vh;
